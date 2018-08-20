@@ -389,18 +389,19 @@ public class C_PlayerEquipmentController : MonoBehaviour
 			{
 				return;
 			}
-			if (this.m_pC_FPSPlayer.m_IsRunning && c_PickupItem.ItemName == "Rifle")
-			{
-				return;
-			}
-			if (this.m_pC_FPSPlayer.m_IsRunning && c_PickupItem.ItemName == "Shotgun")
-			{
-				return;
-			}
-			if (this.m_pC_FPSPlayer.m_IsRunning && c_PickupItem.ItemName == "Blunderbuss")
-			{
-				return;
-			}
+			// Commented lines to make two handed weapons being able to shoot while running
+			// if (this.m_pC_FPSPlayer.m_IsRunning && c_PickupItem.ItemName == "Rifle")
+			// {
+			// 	  return;
+			// }
+			// if (this.m_pC_FPSPlayer.m_IsRunning && c_PickupItem.ItemName == "Shotgun")
+			// {
+			// 	  return;
+			// }
+			// if (this.m_pC_FPSPlayer.m_IsRunning && c_PickupItem.ItemName == "Blunderbuss")
+			// {
+			// 	  return;
+			// }
 			if (component != null)
 			{
 				Ray usePosition = new Ray(this.PlayerFacingTransform.position, this.PlayerFacingTransform.forward);

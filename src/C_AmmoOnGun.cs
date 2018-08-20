@@ -22,6 +22,7 @@ public class C_AmmoOnGun : MonoBehaviour
 
 	public bool CanConsume(int amountToConsume)
 	{
+		// SUPERGUN check
 		if (God.Settings.Supergun) {
 			return true;
 		}

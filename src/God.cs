@@ -130,6 +130,7 @@ public class God : MonoBehaviour
 		{
 			return;
 		}
+		// SUPERGUN entry in dev console
         if (Input.GetKeyDown(KeyCode.Keypad9))
 		{
 			God.Settings.Supergun = !God.Settings.Supergun;
@@ -276,6 +277,7 @@ public class God : MonoBehaviour
 
 		public GameObject PheasToSpawn;
 
+		// Supergun boolean
 		public bool Supergun;
 	}
 }
